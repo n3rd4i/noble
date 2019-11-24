@@ -7,13 +7,13 @@
   "license": "MIT",
   "name": "@abandonware/noble",
   "description": "A Node.js BLE (Bluetooth Low Energy) central library.",
-  "version": "1.9.2-1",
+  "version": "1.9.2-5",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sandeepmistry/noble.git"
+    "url": "https://github.com/abandonware/noble.git"
   },
   "bugs": {
-    "url": "https://github.com/sandeepmistry/noble/issues"
+    "url": "https://github.com/abandonware/noble/issues"
   },
   "keywords": [
     "bluetooth",
@@ -33,20 +33,21 @@
     "win32"
   ],
   "dependencies": {
-    "debug": "^4.1.0"
+    "debug": "^4.1.1",
+    "napi-thread-safe-callback": "0.0.6",
+    "node-addon-api": "^1.1.0"
   },
   "optionalDependencies": {
-    "@abandonware/bluetooth-hci-socket": "^0.5.3-1",
-    "bplist-parser": "0.1.1",
-    "xpc-connection": "~0.1.4"
+    "@abandonware/bluetooth-hci-socket": "^0.5.3-3"
   },
   "devDependencies": {
-    "async": "~2.6.1",
+    "async": "^3.1.0",
     "jshint": "latest",
-    "mocha": "^5.2.0",
+    "mocha": "^6.2.0",
+    "node-gyp": "^5.0.3",
     "should": "~13.2.3",
-    "sinon": "~7.2.2",
-    "ws": "^6.1.2"
+    "sinon": "~7.4.2",
+    "ws": "^7.1.2"
   },
   "scripts": {
     "pretest": "jshint *.js lib/. test/.",
